@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff7675, #74b9ff);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    width: 900px;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+}
+
+.timer-section, .task-section, .analytics-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.timer-modes button,
+.timer-controls button,
+.task-section button {
+    padding: 8px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #0984e3;
+    color: white;
+}
+
+.timer-modes button:hover,
+.timer-controls button:hover,
+.task-section button:hover {
+    background: #0652DD;
+}
+
+#time {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+#taskInput {
+    padding: 8px;
+    width: 60%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 8px;
+    background: #f1f2f6;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}

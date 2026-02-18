@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pomodoro Productivity App</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🍅 Pomodoro Productivity App</h1>
+
+    <!-- TIMER SECTION -->
+    <div class="timer-section">
+        <div class="timer-modes">
+            <button onclick="setMode('pomodoro')">Pomodoro</button>
+            <button onclick="setMode('short')">Short Break</button>
+            <button onclick="setMode('long')">Long Break</button>
+        </div>
+
+        <h2 id="time">25:00</h2>
+
+        <div class="timer-controls">
+            <button onclick="startTimer()">Start</button>
+            <button onclick="pauseTimer()">Pause</button>
+            <button onclick="resetTimer()">Reset</button>
+        </div>
+    </div>
+
+    <!-- TASK SECTION -->
+    <div class="task-section">
+        <h2>📋 Task Management</h2>
+        <input type="text" id="taskInput" placeholder="Enter a task">
+        <button onclick="addTask()">Add Task</button>
+        <ul id="taskList"></ul>
+    </div>
+
+    <!-- ANALYTICS SECTION -->
+    <div class="analytics-section">
+        <h2>📊 Analytics & Report</h2>
+        <p>Total Pomodoro Sessions: <span id="sessionCount">0</span></p>
+        <canvas id="reportChart"></canvas>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
